@@ -2,10 +2,24 @@
 
 
 
-int insertion_sort(int arr[], int lenght){
+int insertion_sort(int arr[], int length){
 // Start with the second element and compares if itself is smaller than the first.
 // Then, we going to compares the third element if is smaller then the others compared before.
-return 0;
+
+    for (int i=1; i < lenght; i++){
+        int key = a[i];
+        int j = i - 1;
+        while(j >= 0 && a[j] > key){
+        a[j+1] = a[j];
+        j = j - 1;
+        }
+        a[j+1] = key;
+    }
+
+
+
+
+    return 0;
 }
 
 // Big datas is not the best, but the smaller numbers or datas.
